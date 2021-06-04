@@ -1,0 +1,56 @@
+//- index.pug
+doctype html
+html
+  head
+    title Gourab Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/6.png")
+                | GDA
+            li #[a(href="/") Home]  
+            li #[a(href="/") About]
+            li #[a(href="/") Contact Us]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+    section#introSection 
+        div Welcome to Gourab Dance Academy
+        div.small Any Body Can Dance
+    section#sponsorsSection 
+        h2  Our Sponsors
+        div#sponsors 
+            img(src="/static/img/logo1.png", alt="sponsor Image", Class="spImage")
+            img(src="/static/img/logo2.png", alt="sponsor Image", Class="spImage")
+            img(src="/static/img/logo3.png", alt="sponsor Image", Class="spImage")
+            img(src="/static/img/logo4.png", alt="sponsor Image", Class="spImage")
+    section#missionSection 
+        h2  Our Mission
+        div.card
+            h3 Dance perfection
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/4.png")
+                div.card-content 
+                    p This is the best dance academy in the universe
+        div.card
+            h3 Dance the way you like
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/5.png")
+                div.card-content 
+                    p This is the best dance academy in the universe
+        div.card
+            h3 Expert Teaching
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/logo.jpg")
+                div.card-content 
+                    p This is the best dance academy in the universe
+    footer#footer 
+        | copyright 2021 GourabDanceAcademy.com | All right resolved
+        
+    script
+      include ../static/index.js

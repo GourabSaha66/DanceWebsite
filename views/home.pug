@@ -1,0 +1,43 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style 
+      include ../static/style.css
+
+block content
+    section#introSection 
+        div Welcome to Gourab Dance Academy
+        div.small Any Body Can Dance
+    section#sponsorsSection 
+        h2  Our Sponsors
+        div#sponsors 
+            img(src="/static/img/logo1.png", alt="sponsor Image", Class="spImage")
+            img(src="/static/img/logo2.png", alt="sponsor Image", Class="spImage")
+            img(src="/static/img/logo3.png", alt="sponsor Image", Class="spImage")
+            img(src="/static/img/logo4.png", alt="sponsor Image", Class="spImage")
+    section#missionSection 
+        h2  Our Mission
+        div.card
+            h3 Dance perfection
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/4.png")
+                div.card-content 
+                    p This is the best dance academy in the universe
+        div.card
+            h3 Dance the way you like
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/5.png")
+                div.card-content 
+                    p This is the best dance academy in the universe
+        div.card
+            h3 Expert Teaching
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/logo.jpg")
+                div.card-content 
+                    p This is the best dance academy in the universe
